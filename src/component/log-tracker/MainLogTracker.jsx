@@ -27,7 +27,7 @@ const MainLogTracker = () => {
     switch (data) {
       case "limit":
         setPage(1)
-        setLimit(value, "")
+        setLimit(value)
         getDataLogTracks(1, value, search)
         break
       default:
