@@ -20,6 +20,14 @@ const App = () => {
             <LogTracker pageActive={pageActive} setPageActive={setPageActive} />
           }></Route>
         <Route
+          path='*'
+          element={
+            <ValidationAction
+              pageActive={pageActive}
+              setPageActive={setPageActive}
+            />
+          }></Route>
+        <Route
           path='/validation-action'
           element={
             <ValidationAction
